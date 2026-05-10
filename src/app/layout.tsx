@@ -6,20 +6,16 @@ import { Toaster } from "sonner";
 export const metadata: Metadata = {
   title: "Traveloop – AI-Powered Travel Planning",
   description: "Plan smarter trips with AI-generated itineraries, budget optimization, and collaborative sharing.",
-  keywords: "travel planning, AI itinerary, trip planner, travel app",
-  openGraph: {
-    title: "Traveloop – AI-Powered Travel Planning",
-    description: "Plan smarter trips with AI-generated itineraries",
-    type: "website",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="mesh-bg" />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          {/* Aurora animated background */}
+          <div className="aurora-bg" />
+          <div className="aurora-orb-rose" />
           {children}
           <Toaster richColors position="top-right" />
         </ThemeProvider>
