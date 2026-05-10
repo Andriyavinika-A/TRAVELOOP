@@ -1,0 +1,195 @@
+// Mock data for development - replace with real Supabase queries
+
+export const MOCK_USER = {
+  id: "user-1",
+  name: "Alex Johnson",
+  email: "alex@traveloop.com",
+  avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=alex",
+  bio: "Adventure seeker & travel enthusiast 🌍",
+  trips_count: 12,
+  countries_visited: 8,
+  joined: "2023-06-15",
+};
+
+export const MOCK_TRIPS = [
+  {
+    id: "trip-1",
+    name: "Golden Triangle India",
+    description: "Explore Delhi, Agra, and Jaipur — the iconic Golden Triangle of India.",
+    cover_image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
+    start_date: "2024-12-20",
+    end_date: "2024-12-28",
+    destination_count: 3,
+    estimated_budget: 2800,
+    currency: "USD",
+    status: "upcoming",
+    travel_type: "Cultural",
+    travelers: 2,
+    cities: ["Delhi", "Agra", "Jaipur"],
+    share_token: "gt-india-abc123",
+  },
+  {
+    id: "trip-2",
+    name: "Bali Beach Getaway",
+    description: "Sun, surf, and spirituality in the Island of the Gods.",
+    cover_image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+    start_date: "2025-02-14",
+    end_date: "2025-02-21",
+    destination_count: 4,
+    estimated_budget: 1900,
+    currency: "USD",
+    status: "upcoming",
+    travel_type: "Beach",
+    travelers: 2,
+    cities: ["Ubud", "Seminyak", "Uluwatu", "Canggu"],
+    share_token: "bali-trip-def456",
+  },
+  {
+    id: "trip-3",
+    name: "European Summer Tour",
+    description: "A classic backpacking route through Paris, Rome, and Barcelona.",
+    cover_image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80",
+    start_date: "2024-07-01",
+    end_date: "2024-07-15",
+    destination_count: 3,
+    estimated_budget: 4500,
+    currency: "USD",
+    status: "completed",
+    travel_type: "Backpacking",
+    travelers: 1,
+    cities: ["Paris", "Rome", "Barcelona"],
+    share_token: "europe-tour-ghi789",
+  },
+  {
+    id: "trip-4",
+    name: "Tokyo Adventure",
+    description: "Anime, ramen, and cherry blossoms in the land of the rising sun.",
+    cover_image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
+    start_date: "2024-04-01",
+    end_date: "2024-04-10",
+    destination_count: 2,
+    estimated_budget: 3200,
+    currency: "USD",
+    status: "completed",
+    travel_type: "City Break",
+    travelers: 2,
+    cities: ["Tokyo", "Kyoto"],
+    share_token: "tokyo-adv-jkl012",
+  },
+];
+
+export const MOCK_DESTINATIONS = [
+  { id: 1, name: "Santorini", country: "Greece", image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400&q=80", avg_cost: 180, rating: 4.9, weather: "Sunny", trend: "+15%" },
+  { id: 2, name: "Kyoto", country: "Japan", image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&q=80", avg_cost: 120, rating: 4.8, weather: "Mild", trend: "+22%" },
+  { id: 3, name: "Maldives", country: "Maldives", image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=400&q=80", avg_cost: 350, rating: 4.9, weather: "Tropical", trend: "+8%" },
+  { id: 4, name: "Machu Picchu", country: "Peru", image: "https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=400&q=80", avg_cost: 95, rating: 4.8, weather: "Cool", trend: "+31%" },
+  { id: 5, name: "Dubai", country: "UAE", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80", avg_cost: 200, rating: 4.7, weather: "Hot", trend: "+19%" },
+  { id: 6, name: "Iceland", country: "Iceland", image: "https://images.unsplash.com/photo-1520769945061-0a448c463865?w=400&q=80", avg_cost: 250, rating: 4.9, weather: "Cold", trend: "+42%" },
+];
+
+export const MOCK_ACTIVITIES = [
+  { id: 1, name: "Taj Mahal Sunrise Tour", category: "sightseeing", cost: 45, duration: "3 hours", rating: 4.9, city: "Agra", image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=400&q=80" },
+  { id: 2, name: "Bali Rice Terrace Trekking", category: "adventure", cost: 30, duration: "4 hours", rating: 4.7, city: "Ubud", image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&q=80" },
+  { id: 3, name: "Tokyo Street Food Tour", category: "food", cost: 60, duration: "2 hours", rating: 4.8, city: "Tokyo", image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80" },
+  { id: 4, name: "Santorini Sunset Cruise", category: "nature", cost: 85, duration: "3 hours", rating: 4.9, city: "Santorini", image: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400&q=80" },
+  { id: 5, name: "Ibiza Beach Club Night", category: "nightlife", cost: 120, duration: "6 hours", rating: 4.6, city: "Ibiza", image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&q=80" },
+  { id: 6, name: "Amazon Jungle Trek", category: "adventure", cost: 150, duration: "Full day", rating: 4.8, city: "Manaus", image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400&q=80" },
+];
+
+export const MOCK_ITINERARY = {
+  trip_id: "trip-1",
+  stops: [
+    {
+      id: "stop-1",
+      city: "Delhi",
+      country: "India",
+      arrival: "2024-12-20",
+      departure: "2024-12-22",
+      hotel: "The Leela Palace Delhi",
+      hotel_cost: 220,
+      notes: "Check in after 2pm. Visit Red Fort in the evening.",
+      estimated_cost: 450,
+      activities: [
+        { time: "09:00", name: "Red Fort Visit", duration: "2h", cost: 15, category: "sightseeing" },
+        { time: "14:00", name: "Chandni Chowk Street Food", duration: "1.5h", cost: 20, category: "food" },
+        { time: "18:00", name: "India Gate Evening Walk", duration: "1h", cost: 0, category: "sightseeing" },
+      ],
+    },
+    {
+      id: "stop-2",
+      city: "Agra",
+      country: "India",
+      arrival: "2024-12-22",
+      departure: "2024-12-24",
+      hotel: "Oberoi Amarvilas",
+      hotel_cost: 380,
+      notes: "Book Taj Mahal tickets in advance. Sunrise visit is magical.",
+      estimated_cost: 620,
+      activities: [
+        { time: "06:00", name: "Taj Mahal Sunrise", duration: "3h", cost: 45, category: "sightseeing" },
+        { time: "12:00", name: "Agra Fort Tour", duration: "2h", cost: 20, category: "sightseeing" },
+        { time: "19:00", name: "Rooftop Dinner with Taj View", duration: "2h", cost: 60, category: "food" },
+      ],
+    },
+    {
+      id: "stop-3",
+      city: "Jaipur",
+      country: "India",
+      arrival: "2024-12-24",
+      departure: "2024-12-28",
+      hotel: "Samode Haveli",
+      hotel_cost: 180,
+      notes: "The Pink City. Explore bazaars for handicrafts.",
+      estimated_cost: 580,
+      activities: [
+        { time: "08:00", name: "Amber Fort Elephant Ride", duration: "3h", cost: 35, category: "adventure" },
+        { time: "14:00", name: "City Palace Museum", duration: "2h", cost: 25, category: "sightseeing" },
+        { time: "17:00", name: "Hawa Mahal Photo Stop", duration: "1h", cost: 10, category: "sightseeing" },
+        { time: "20:00", name: "Chokhi Dhani Cultural Dinner", duration: "3h", cost: 40, category: "food" },
+      ],
+    },
+  ],
+};
+
+export const MOCK_BUDGET = {
+  total: 2800,
+  spent: 1650,
+  breakdown: {
+    transport: { budget: 600, spent: 420 },
+    accommodation: { budget: 900, spent: 780 },
+    food: { budget: 500, spent: 280 },
+    activities: { budget: 400, spent: 170 },
+    miscellaneous: { budget: 400, spent: 0 },
+  },
+  daily: [
+    { day: "Dec 20", amount: 320 },
+    { day: "Dec 21", amount: 280 },
+    { day: "Dec 22", amount: 410 },
+    { day: "Dec 23", amount: 380 },
+    { day: "Dec 24", amount: 260 },
+  ],
+};
+
+export const MOCK_PACKING = [
+  { id: "p1", name: "Passport", category: "documents", packed: true },
+  { id: "p2", name: "Travel Insurance", category: "documents", packed: true },
+  { id: "p3", name: "Visa Documents", category: "documents", packed: false },
+  { id: "p4", name: "T-Shirts (5)", category: "clothing", packed: true },
+  { id: "p5", name: "Comfortable Walking Shoes", category: "clothing", packed: false },
+  { id: "p6", name: "Sunscreen SPF 50", category: "medicine", packed: false },
+  { id: "p7", name: "Power Bank", category: "electronics", packed: true },
+  { id: "p8", name: "Universal Adapter", category: "electronics", packed: true },
+  { id: "p9", name: "Camera", category: "electronics", packed: false },
+  { id: "p10", name: "Pain Killers", category: "medicine", packed: true },
+  { id: "p11", name: "Hand Sanitizer", category: "medicine", packed: false },
+  { id: "p12", name: "Light Jacket", category: "clothing", packed: false },
+];
+
+export const ADMIN_STATS = {
+  total_users: 12847,
+  total_trips: 38291,
+  active_today: 1423,
+  revenue: 84920,
+  popular_destinations: ["Bali", "Tokyo", "Paris", "Santorini", "NYC"],
+  monthly_signups: [820, 940, 1120, 980, 1340, 1580, 1820, 2100, 1950, 2340, 2180, 2600],
+};
